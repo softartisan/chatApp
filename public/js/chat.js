@@ -14,7 +14,7 @@ const sideBarTemplate = document.querySelector('#sideBarTemplate').innerHTML;
 
 //Options
 const {username, room} = Qs.parse(location.search, {ignoreQueryPrefix: true});
-if(!username || !room) location.href = '/';
+if(!username || !room) location.href = '/?error=Debe especificar nick y sala';
 
 const autoscroll = () => {
     //New message element
