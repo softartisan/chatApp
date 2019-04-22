@@ -14,6 +14,7 @@ const sideBarTemplate = document.querySelector('#sideBarTemplate').innerHTML;
 
 //Options
 const {username, room} = Qs.parse(location.search, {ignoreQueryPrefix: true});
+if(!username || !room) location.href = '/';
 
 const autoscroll = () => {
     //New message element
@@ -97,18 +98,7 @@ sendLocationButton.addEventListener('click',() => {
 
 socket.emit('join', {username, room}, (error) => {
     if(error){
-        alert(error);
-        location.href = '/';
+        location.href = `/?error=${error}`;
     }
 });
 
-
-
-// socket.on('countUpdated', (count) => {
-//     document.querySelector('#count').innerHTML=`El contador se ha actualizado: ${count}`;
-// });
-
-// document.querySelector('#increment').addEventListener('click', () => {
-//     console.log('Clicked');
-//     socket.emit('increment');
-// });

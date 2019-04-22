@@ -62,6 +62,7 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
 
         const user = removeUser(socket.id);
+        if(!user) return;
         if(user) io.to(user.room).emit('message', generateMessage(`${user.username} se ha desconectado`));
         io.to(user.room).emit('roomData',{
             room: user.room,
