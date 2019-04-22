@@ -103,19 +103,24 @@ button:disabled {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background-image: url('https://assets.change.org/photos/4/iq/nx/xTIQNxFsjOgIJzH-400x225-noPad.jpg?1551373551');
     max-height: 100vh;
 }
 
 .chat__messages {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
+   
     overflow-y: scroll;
 }
 
 /* Message Styles */
 
 .message {
+    padding: 1%;
+    border-radius: 15px;
     margin-bottom: 16px;   
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .message__name {
