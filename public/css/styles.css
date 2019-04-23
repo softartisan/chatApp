@@ -16,7 +16,7 @@ input {
 
 body {
     line-height: 1.4;
-    color: #333333;
+    color: #1d1e21;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -40,7 +40,7 @@ input {
 button {
     cursor: pointer;
     padding: 12px;
-    background: #7C5CBF;
+    background: #ea2845;
     border: none;
     color: white;
     font-size: 16px;
@@ -48,7 +48,7 @@ button {
 }
 
 button:hover {
-    background: #6b47b8;
+    background: #ea2845;
 }
 
 button:disabled {
@@ -59,7 +59,7 @@ button:disabled {
 /* Join Page Styles */
 
 .centered-form {
-    background: #333744;
+    background: #1d1e21;
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -92,7 +92,7 @@ button:disabled {
 .chat__sidebar {
     height: 100vh;
     color: white;
-    background: #333744;
+    background: #26272a;
     width: 225px;
     overflow-y: scroll
 }
@@ -103,7 +103,7 @@ button:disabled {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background-image: url('https://assets.change.org/photos/4/iq/nx/xTIQNxFsjOgIJzH-400x225-noPad.jpg?1551373551');
+    background: #1d1e21;
     max-height: 100vh;
 }
 
@@ -170,7 +170,7 @@ button:disabled {
 .room-title {
     font-weight: 400;
     font-size: 22px;
-    background: #2c2f3a;
+    background: #111;
     padding: 24px;   
 }
 
